@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container{
+  width: 70%;
+  margin: 3% auto;
+}
+
+/* Regole Cleafix */
+.row::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.jumbo, main{
+  margin-top: 3%;
+}
+
+/* header */
+header{
+  /* debug */
+  height: 110px;
+  background-color: violet;
+}
+
+/* jumbo */
+.jumbo {
+  /* debug */
+  height: 350px;
+  background-color: yellow;
+}
+
+/* main */
+main{
+  /* debug */
+  background-color: blue;
+}
+
+.title.main{
+  /* debug */
+  height: 60px;
+  background-color: lightblue;
+}
+
+/* specifiche figli row */
+.aside,.sezione.centrale{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  /* debug */
+  height: 450px;
+  background-color: lightblue;
+
+}
+.aside{
+  width: 20%;
+  float: left;
+}
+
+.sezione.centrale{
+  margin-left: 1%;
+  margin-right: 1%;
+  width: 58%;
+  float: left;
+}
+
+/* footer */
+footer{
+  margin-top: 1%;
+  /* debug */
+  height: 50px;
+  background-color: purple;
+}
